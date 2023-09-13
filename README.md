@@ -1,2 +1,2 @@
-# ZSK - Projektowanie oprogramowania 2023
-Lekcje z projektowania oprogramowania, rok szkolny 2023/2024
+# ZSK - PHP 2023
+PHP, Laravel i nauka Gita, rok szkolny 2023/2024

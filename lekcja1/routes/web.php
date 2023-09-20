@@ -35,8 +35,13 @@ Route::get('/status', function() {
     return "Status: " . app("Illuminate\Http\Response") -> status();
 });
 // parametr w url
-Route::get("/age/{age}", function($age) {
-    return "Your age is " . $age;
+Route::get("/pages/{page}", function($page) {
+    $info = [
+        "about" => "Informacja o stronie",
+        "contact" => "contact@o2.pl",
+        "home" => "Strona domowa",
+    ];
+    return $info[$page];
 });
 
 Route::middleware('auth')->group(function () {

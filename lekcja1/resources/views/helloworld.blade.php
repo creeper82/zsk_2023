@@ -51,7 +51,7 @@
                                 <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">This text is edited lol</h2>
 
                                 <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                        Welcome to hello world page..
+                                        Welcome to the hello world page.. <br>
                                         Your full name seems to be: {{$name}} {{$surname}}
                                 </p>
                             </div>

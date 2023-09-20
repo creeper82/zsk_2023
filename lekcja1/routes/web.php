@@ -24,10 +24,10 @@ Route::get('/dashboard', function () {
 
 Route::get("/helloworld", function() { return view('helloworld');});
 
-Route::redirect("/", "/helloworld");
+Route::redirect("/", "/status");
 
 Route::get('/status', function() {
-    return "Status";
+    return "Status: " . app("Illuminate\Http\Response") -> status();
 });
 
 Route::middleware('auth')->group(function () {

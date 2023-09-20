@@ -29,7 +29,7 @@ Route::get("/helloworld2", function() {
     return (view('helloworld', ["name" => "Milosz", "surname" => "wyyyyyypychylo"]) );
 });
 
-Route::redirect("/", "/status");
+Route::redirect("/", "/helloworld");
 
 Route::get('/status', function() {
     return "Status: " . app("Illuminate\Http\Response") -> status();

@@ -24,6 +24,11 @@ Route::get('/dashboard', function () {
 
 Route::get("/helloworld", function() { return view('helloworld');});
 
+// wywolanie view helloworld z parametrami
+Route::get("/helloworld2", function() {
+    return (view('helloworld', ["name" => "Milosz", "surname" => "wyyyyyypychylo"]) );
+});
+
 Route::redirect("/", "/status");
 
 Route::get('/status', function() {

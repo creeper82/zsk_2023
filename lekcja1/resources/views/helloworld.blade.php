@@ -52,6 +52,7 @@
 
                                 <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                                         Welcome to hello world page..
+                                        Your full name seems to be: {{$name}} {{$surname}}
                                 </p>
                             </div>
 

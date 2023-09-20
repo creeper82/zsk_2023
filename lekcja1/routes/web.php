@@ -34,6 +34,10 @@ Route::redirect("/", "/status");
 Route::get('/status', function() {
     return "Status: " . app("Illuminate\Http\Response") -> status();
 });
+// parametr w url
+Route::get("/age/{age}", function($age) {
+    return "Your age is " . $age;
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

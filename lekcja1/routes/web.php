@@ -80,7 +80,9 @@ Route::get("/address3/{city}/{street}/{zipCode?}", function(string $city, string
         Kod pocztowy: $zipCode
         <hr>
     ADDRESS;
-});
+}) -> name("Address");
+
+Route::redirect("adres/{city}/{street}/{zipCode?}", "/address3/{city}/{street}");
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -34,6 +34,7 @@ Route::redirect("/", "/helloworld");
 Route::get('/status', function() {
     return "Status: " . app("Illuminate\Http\Response") -> status();
 });
+
 // parametr w url
 Route::get("/pages/{page}", function($page) {
     $info = [
@@ -42,6 +43,13 @@ Route::get("/pages/{page}", function($page) {
         "home" => "Strona domowa",
     ];
     return $info[$page];
+});
+
+Route::get("/address/{city}/{street}", function(string $city, string $street) {
+    echo<<<ADDRESS
+        Twój adres:
+        $city, ul. $street
+    ADDRESS;
 });
 
 Route::middleware('auth')->group(function () {

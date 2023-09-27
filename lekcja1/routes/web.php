@@ -45,10 +45,40 @@ Route::get("/pages/{page}", function($page) {
     return $info[$page];
 });
 
+Route::get("/address/{city}", function(string $city) {
+    echo<<<ADDRESS
+        Twój adres: <br>
+        $city
+    ADDRESS;
+});
+
 Route::get("/address/{city}/{street}", function(string $city, string $street) {
     echo<<<ADDRESS
         Twój adres: <br>
         $city, ul. $street
+    ADDRESS;
+});
+
+Route::get("/address2/{city}/{street}/{zipCode}", function(string $city, string $street, int $zipCode) {
+    $zipCode = substr($zipCode, 0, 2) . "-" . substr($zipCode, 2);
+    echo<<<ADDRESS
+        Twój adres: <br>
+        $city, ul. $street <br>
+        Kod pocztowy: $zipCode
+        <hr>
+    ADDRESS;
+});
+
+Route::get("/address3/{city}/{street}/{zipCode?}", function(string $city, string $street, int $zipCode = null) {
+    if (!is_null($zipCode)) $zipCode = substr($zipCode, 0, 2) . "-" . substr($zipCode, 2);
+    else $zipCode = "Brak danych";
+    
+
+    echo<<<ADDRESS
+        Twój adres: <br>
+        $city, ul. $street <br>
+        Kod pocztowy: $zipCode
+        <hr>
     ADDRESS;
 });
 

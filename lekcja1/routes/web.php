@@ -47,7 +47,7 @@ Route::get("/pages/{page}", function($page) {
 
 Route::get("/address/{city}/{street}", function(string $city, string $street) {
     echo<<<ADDRESS
-        Twój adres:
+        Twój adres: <br>
         $city, ul. $street
     ADDRESS;
 });

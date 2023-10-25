@@ -28,10 +28,11 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-
-Route::get("show_array", [ArrayController::class, "ShowArray"]);
+ 
+Route::get("sample_user", [ArrayController::class, "ShowArray"]);
 Route::get("user_form", function() {
     return view("forms.user_form");
 });
+Route::redirect("", "user_form");
 
 Route::get("UserFormController", [UserFormController::class, "ShowUser"]);

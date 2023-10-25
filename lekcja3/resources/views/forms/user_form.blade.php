@@ -1,10 +1,12 @@
 <div>
     <h3>Dane użytkownika</h3>
-    <p>Tu beda te śmieszne dane</p>
+    <p>Podaj te śmieszne dane</p>
 
     <form action="UserFormController" method="GET">
         <input type="text" name="firstName" placeholder="Podaj imię" autofocus> <br> <br>
         <input type="text" name="lastName" placeholder="Podaj nazwisko"> <br> <br>
+        <input type="text" name="city" placeholder="Podaj miasto"> <br> <br>
+        <input type="text" name="hobbies" placeholder="Podaj hobby po przecinku"> <br> <br>
         <input type="submit" value="Zatwierdź dane">
     </form>
 </div>

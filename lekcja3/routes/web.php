@@ -26,3 +26,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get("show_array", [\App\Http\Controllers\ArrayController::class, "ShowArray"]);

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArrayController;
+use App\Http\Controllers\UserFormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,5 @@ Route::get("show_array", [ArrayController::class, "ShowArray"]);
 Route::get("user_form", function() {
     return view("forms.user_form");
 });
+
+Route::get("UserFormController", [UserFormController::class, "ShowUser"]);

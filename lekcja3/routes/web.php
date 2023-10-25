@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArrayController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,4 +28,4 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get("show_array", [\App\Http\Controllers\ArrayController::class, "ShowArray"]);
+Route::get("show_array", [ArrayController::class, "ShowArray"]);

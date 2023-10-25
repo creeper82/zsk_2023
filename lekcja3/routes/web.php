@@ -29,3 +29,6 @@ Route::middleware([
 });
 
 Route::get("show_array", [ArrayController::class, "ShowArray"]);
+Route::get("user_form", function() {
+    return view("forms.user_form");
+});

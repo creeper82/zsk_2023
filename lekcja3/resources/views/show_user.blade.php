@@ -1,3 +1,10 @@
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+</style>
+
 <div>
     <h3>Dane użytkownika</h3>
     <p>Imie masz {{$firstName }}</p>

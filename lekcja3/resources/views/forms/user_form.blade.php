@@ -9,6 +9,15 @@
     <h3>Dane użytkownika</h3>
     <p>Podaj te śmieszne dane</p>
 
+    @if($errors->any())
+        <p>Błędy:</p>
+        <ul>
+            @foreach($errors->all() as $error)
+                <li>{{$error}}</li>
+            @endforeach
+        </ul>
+    @endif
+
     <form action="UserFormController" method="GET">
         <input type="text" name="firstName" placeholder="Podaj imię" autofocus> <br> <br>
         <input type="text" name="lastName" placeholder="Podaj nazwisko"> <br> <br>

@@ -29,6 +29,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::redirect("/", "/db");
+
+Route::get("/db", [ShowDbController::class, "showPageList"]);
+
 Route::get("/db/users", [ShowDbController::class,"showUsersTable"]);
+
+Route::get("/db/adduser", [ShowDbController::class,"addSampleUser"]);
 
 require __DIR__.'/auth.php';

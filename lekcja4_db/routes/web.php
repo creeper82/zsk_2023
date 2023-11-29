@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ShowDbController;
 use Illuminate\Support\Facades\Route;
@@ -36,5 +37,7 @@ Route::get("/db", [ShowDbController::class, "showPageList"]);
 Route::get("/db/users", [ShowDbController::class,"showUsersTable"]);
 
 Route::get("/db/adduser", [ShowDbController::class,"addSampleUser"]);
+
+Route::resource("product", ProductController::class);
 
 require __DIR__.'/auth.php';

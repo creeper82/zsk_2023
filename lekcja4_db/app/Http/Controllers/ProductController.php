@@ -34,6 +34,8 @@ class ProductController extends Controller
         $newProduct->price = $request->price;
         $newProduct->description = $request->description;
 
+        $newProduct->save();
+
         return "probujesz dodac produkt: {{$newProduct->name}}";
 
 

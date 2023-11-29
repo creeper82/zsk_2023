@@ -12,7 +12,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        return view("products.index", ["products" => Product::all()]);
     }
 
     /**
@@ -20,7 +20,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return view("products.create");
     }
 
     /**
@@ -28,7 +28,15 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $newProduct = new Product();
+
+        $newProduct->name = $request->name;
+        $newProduct->price = $request->price;
+        $newProduct->description = $request->description;
+
+        return "probujesz dodac produkt: {{$newProduct->name}}";
+
+
     }
 
     /**

@@ -6,6 +6,12 @@
 
 <h3>Nowy produkt</h3>
 
+@if ($errors->any())
+    @foreach ($errors->all() as $error)
+        <p>{{$error}}</p>
+    @endforeach
+@endif
+
 <form action="{{route("product.store")}}" method="post">
     @csrf
     <label for="name">Nazwa</label> <br>

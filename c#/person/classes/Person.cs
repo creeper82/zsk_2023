@@ -42,8 +42,8 @@ static class Data
         return people;
     }
 
-    public static void Display(this Person[] people)
-    {
-        foreach (var person in people) Console.WriteLine($"{person.Imie}, Wiek: {person.Wiek}");
-    }
+    // public static void Display(this Person[] people)
+    // {
+    //     foreach (var person in people) Console.WriteLine($"{person.Imie}, Wiek: {person.Wiek}");
+    // }
 }

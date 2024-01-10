@@ -1,0 +1,15 @@
+C:\Users\student\Downloads\zsk_2023\c#\person\bin\Debug\net8.0\person.exe
+C:\Users\student\Downloads\zsk_2023\c#\person\bin\Debug\net8.0\person.deps.json
+C:\Users\student\Downloads\zsk_2023\c#\person\bin\Debug\net8.0\person.runtimeconfig.json
+C:\Users\student\Downloads\zsk_2023\c#\person\bin\Debug\net8.0\person.dll
+C:\Users\student\Downloads\zsk_2023\c#\person\bin\Debug\net8.0\person.pdb
+C:\Users\student\Downloads\zsk_2023\c#\person\obj\Debug\net8.0\person.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\Downloads\zsk_2023\c#\person\obj\Debug\net8.0\person.AssemblyInfoInputs.cache
+C:\Users\student\Downloads\zsk_2023\c#\person\obj\Debug\net8.0\person.AssemblyInfo.cs
+C:\Users\student\Downloads\zsk_2023\c#\person\obj\Debug\net8.0\person.csproj.CoreCompileInputs.cache
+C:\Users\student\Downloads\zsk_2023\c#\person\obj\Debug\net8.0\person.sourcelink.json
+C:\Users\student\Downloads\zsk_2023\c#\person\obj\Debug\net8.0\person.dll
+C:\Users\student\Downloads\zsk_2023\c#\person\obj\Debug\net8.0\refint\person.dll
+C:\Users\student\Downloads\zsk_2023\c#\person\obj\Debug\net8.0\person.pdb
+C:\Users\student\Downloads\zsk_2023\c#\person\obj\Debug\net8.0\person.genruntimeconfig.cache
+C:\Users\student\Downloads\zsk_2023\c#\person\obj\Debug\net8.0\ref\person.dll

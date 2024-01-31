@@ -1,6 +1,6 @@
 namespace classes;
 
-public class Book : Icomparable<Book>
+public class Book : IComparable<Book>
 {
     public string Title { get; set; }
     public string Author { get; set; }

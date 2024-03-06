@@ -1,7 +1,7 @@
 namespace Eventy;
 
 public class Subscriber {
-    public void OnMessageReceived(string message) {
-        Console.WriteLine("Otrzymano: " + message);
+    public void OnNewVideo(string videoName, string channelName) {
+        Console.WriteLine($"Kanał {channelName} wypuszcza film: {videoName}");
     }
 }

@@ -1,13 +1,13 @@
 namespace Eventy;
 
-public class Publisher {
-    public delegate void MessageHandler(string message);
+public class Channel(string Name) {
+    public delegate void NewVideoHandler(string message, string channelName);
 
-    public event MessageHandler? MessageEvent = null;
+    public event NewVideoHandler? NewVideoEvent = null;
 
-    public void SendMessage(string message) {
-        if (MessageEvent is not null) {
-            MessageEvent(message);
+    public void PublishVideo(string videoName) {
+        if (NewVideoEvent is not null) {
+            NewVideoEvent(videoName, Name);
         }
     }
 }

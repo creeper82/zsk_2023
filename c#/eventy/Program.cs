@@ -3,17 +3,17 @@
 Console.WriteLine("Witamy w YouTube!");
 Console.WriteLine("Twoje konto: sushiMapper");
 
-var mandzio = new Publisher();
-var kruszwil = new Publisher();
+var mandzio = new Channel("Mandzio");
+var kruszwil = new Channel("Kruszwil");
 
 var sushiMapper = new Subscriber();
 
 // suszek subskrybuje dwa kanały
-mandzio.MessageEvent += sushiMapper.OnMessageReceived;
-kruszwil.MessageEvent += sushiMapper.OnMessageReceived;
+mandzio.NewVideoEvent += sushiMapper.OnNewVideo;
+kruszwil.NewVideoEvent += sushiMapper.OnNewVideo;
 
 // kruszwil wypuszcza film
-kruszwil.SendMessage("Nowy film: PRZEŻYŁEM 24H POD ZIEMIĄ!");
+kruszwil.PublishVideo("Przeżyłem 24H pod ziemią!");
 
 // mandzio wypuszcza film
-mandzio.SendMessage("Nowy film: MINECRAFT - LET'S PLAY #37");
+mandzio.PublishVideo("MINECRAFT - LET'S PLAY #37");

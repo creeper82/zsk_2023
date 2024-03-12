@@ -2,7 +2,7 @@ namespace Classes;
 
 public class Animal
 {
-    public delegate void AnimalSoundHandler();
+    public delegate void AnimalSoundHandler(string AnimalName);
 
     public string Name { get; set; }
     public string Species { get; set; }
@@ -14,7 +14,7 @@ public class Animal
         Name = name; Species = species; Age = age;
     }
 
-    public void MakeSound() { AnimalSoundEvent?.Invoke(); }
+    public void MakeSound() { AnimalSoundEvent?.Invoke(Name); }
 
     public void PrintInfo() { Console.WriteLine($"Zwierzę gatunku {Species} ma nazwę {Name} i wiek {Age} lat/a."); }
 }

@@ -1,4 +1,4 @@
-namespace Eventy;
+namespace Youtube;
 
 public class Channel(string Name) {
     public delegate void NewVideoHandler(string message, string channelName, int priority);

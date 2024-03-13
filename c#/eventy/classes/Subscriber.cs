@@ -1,4 +1,4 @@
-namespace Eventy;
+namespace Youtube;
 
 public class Subscriber(int priorityTreshold) {
     public int PriorityTreshold {get; set;} = priorityTreshold;

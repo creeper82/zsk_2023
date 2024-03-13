@@ -1,4 +1,4 @@
-﻿using Eventy;
+﻿using Youtube;
 
 Console.WriteLine("Witamy w YouTube!");
 Console.WriteLine("Twoje konto: sushiMapper");

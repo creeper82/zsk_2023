@@ -1,13 +1,13 @@
 namespace Eventy;
 
 public class Channel(string Name) {
-    public delegate void NewVideoHandler(string message, string channelName);
+    public delegate void NewVideoHandler(string message, string channelName, int priority);
 
     public event NewVideoHandler? NewVideoEvent = null;
 
-    public void PublishVideo(string videoName) {
+    public void PublishVideo(string videoName, int videoPriority) {
         if (NewVideoEvent is not null) {
-            NewVideoEvent(videoName, Name);
+            NewVideoEvent(videoName, Name, videoPriority);
         }
     }
 }
